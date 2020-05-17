@@ -20,9 +20,9 @@ func main() {
 		if err := p.Start(); err != nil {
 			log.Panic(err)
 		}
-		for  {
+		for {
 			if err := p.Push([]byte("hello")); err != nil {
-				log.Panic(err)
+				// error handle
 			}
 			// 方便看log
 			time.Sleep(1 * time.Second)
@@ -30,7 +30,7 @@ func main() {
 	}()
 
 	go func() {
-		handler := func (data []byte) error {
+		handler := func(data []byte) error {
 			return nil
 		}
 
@@ -53,7 +53,5 @@ func main() {
 		}
 	}()
 
-	select {
-
-	}
+	select {}
 }
