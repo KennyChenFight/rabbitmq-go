@@ -9,7 +9,7 @@
 
 ## How to use
 + 可參考main.go的使用方式
-+ 基本上封裝的方式不難，可實際看producer.go與consumer.go的程式碼，並根據需求進行修正
++ 基本上封裝的方式不難，可實際看rabbitmq/producer.go與rabbitmq/consumer.go的程式碼，並根據需求進行修正
 + 都有寫詳細註解
 
 ## Contribution
